@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ứng dụng Vẽ Đồ Thị</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>CYBERPUNK GRAPH VISUALIZATION</header>
+
+  <!-- BẢNG THUẬT TOÁN -->
+  <div class="algo-bar">
+    <button onclick="selectAlgo(event,'bfs')">BFS</button>
+    <button onclick="selectAlgo(event,'dfs')">DFS</button>
+    <button onclick="selectAlgo(event,'dijkstra')">DIJKSTRA</button>
+    <button onclick="selectAlgo(event,'ford')">FORD-FULKERSON</button>
+    <button onclick="selectAlgo(event,'kruskal')">KRUSKAL</button>
+    <button onclick="selectAlgo(event,'prim')">PRIM</button>
+    <button onclick="selectAlgo(event,'fleury')">FLEURY</button>
+    <button onclick="selectAlgo(event,'hierholzer')">HIERHOLZER</button>
+  </div>
+
+  <div class="main">
+
+    <!-- INPUT -->
+    <div class="input-box">
+      <h3>GRAPH INPUT</h3>
+
+      <label>Vertices</label>
+      <input id="vertices" placeholder="A,B,C,D,E,F,G">
+
+      <label>Start Node</label>
+      <input id="start" placeholder="A">
+
+      <label>Edges (u-v)</label>
+      <textarea id="edges" rows="6"
+        placeholder="A-B
+A-C
+B-D"></textarea>
+
+      <button onclick="buildGraph()">Draw Graph</button>
+      <button class="danger" onclick="resetGraph()">Clear</button>
+    </div>
+
+    <!-- CANVAS -->
+    <div class="canvas-box">
+      <canvas id="graphCanvas"></canvas>
+    </div>
+
+    <!-- LOG -->
+    <div class="note-box">
+      <h3>EXECUTION LOG</h3>
+      <pre id="log"></pre>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

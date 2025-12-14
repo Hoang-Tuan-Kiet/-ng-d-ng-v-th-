@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  background: #2b247a;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 98%;
+  margin: 10px auto;
+  background: #1a1f3a;
+  border-radius: 12px;
+}
+
+header {
+  text-align: center;
+  padding: 12px;
+  color: #6df2ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.algo-bar {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  margin: 10px;
+  background: #352e90;
+  border-radius: 10px;
+}
+
+.algo-bar button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #6df2ff;
+  background: transparent;
+  color: #6df2ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.algo-bar button.active,
+.algo-bar button:hover {
+  background: #6df2ff;
+  color: black;
+  box-shadow: 0 0 10px #6df2ff;
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.input-box {
+  width: 220px;
+  background: #0b1020;
+  border-radius: 10px;
+  padding: 10px;
+  color: #6df2ff;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  background: #1a1f3a;
+  color: #6df2ff;
+  border: 1px solid #6df2ff;
+  padding: 5px;
+}
+
+.input-box button {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 5px;
+  background: #6df2ff;
+  border: none;
+  cursor: pointer;
+}
+
+.danger {
+  background: #ff5b5b !important;
+}
+
+.canvas-box {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+canvas {
+  width: 100%;
+  height: 520px;
+}
+
+.note-box {
+  width: 260px;
+  background: #0b1020;
+  border-radius: 10px;
+  padding: 10px;
+  color: #00ff9d;
+  font-size: 13px;
+  overflow-y: auto;
+}
+
+.note-box h3 {
+  text-align: center;
+  color: #6df2ff;
+}
